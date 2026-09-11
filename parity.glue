@@ -1,0 +1,17 @@
+func int Main() {
+    int counter = 1;
+    while (counter <= 100 ) {
+        int half = counter / 2;
+
+        if (half * 2 == counter) {
+            int square = counter * counter;
+            shout("Even: ", counter, " square: ", square);
+        } else {
+            double result = counter * 2.5;
+            shout("Odd: ", counter, " result: ", result);
+        }
+
+        counter = counter + 1;
+    }
+    return 0;
+}
